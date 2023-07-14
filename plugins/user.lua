@@ -44,19 +44,20 @@ return {
     end,
   },
   {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    config = function()
-      require("copilot").setup {
-        suggestion = {
-          auto_trigger = true,
-          keymap = {
-            accept = "<C-l>",
-          },
-        },
-      }
-    end,
+    -- -- disabling this because compliance issues...
+    -- "zbirenbaum/copilot.lua",
+    -- cmd = "Copilot",
+    -- event = "InsertEnter",
+    -- config = function()
+    --   require("copilot").setup {
+    --     suggestion = {
+    --       auto_trigger = true,
+    --       keymap = {
+    --         accept = "<Right>",
+    --       },
+    --     },
+    --   }
+    -- end,
   },
   {
     "ahmedkhalf/project.nvim",
@@ -98,18 +99,28 @@ return {
     lazy = false,
   },
 
-  { "ellisonleao/gruvbox.nvim", lazy = false },
-  { "EdenEast/nightfox.nvim", lazy = false }, -- lazy
-  {
-    "catppuccin/nvim",
-    as = "catppuccin",
-    lazy = false,
-    config = function() require("catppuccin").setup {} end,
-  },
+  -- { "ellisonleao/gruvbox.nvim", lazy = false },
+  -- { "EdenEast/nightfox.nvim", lazy = false }, -- lazy
+  -- {
+  --   "catppuccin/nvim",
+  --   as = "catppuccin",
+  --   lazy = false,
+  --   config = function() require("catppuccin").setup {} end,
+  -- },
   {
     "folke/tokyonight.nvim",
     as = "tokyonight",
     lazy = false,
     config = function() require("tokyonight").setup {} end,
+  },
+  {
+    "navarasu/onedark.nvim",
+    as = "onedark",
+    lazy = false,
+    config = function()
+      require("onedark").setup {
+        style = "warmer",
+      }
+    end,
   },
 }

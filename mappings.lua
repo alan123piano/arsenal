@@ -29,7 +29,6 @@ return {
       "<cmd>CellularAutomaton make_it_rain<cr>",
       desc = "Fuck my life",
     },
-
     ["<leader>;"] = { "<cmd>:edit!<cr>", desc = "Reload buffer" },
     ["<leader>pp"] = {
       "<cmd>:Telescope projects<cr>",
@@ -40,12 +39,20 @@ return {
       desc = "Spectre search & replace",
     },
     ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" },
+    ["<C-b>"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" },
     ["<leader>'"] = { "<C-w>s<cmd>:terminal<cr>", desc = "Quick Terminal" },
   },
   t = {
     ["<esc>"] = { "<C-\\><C-n>" },
+    ["<C-j>"] = { "<cmd>:q!<cr>" },
   },
   i = {
     ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" }, -- change description but the same command
+
+    -- window nav
+    ["<C-h>"] = { "<cmd>wincmd h<cr><esc>i", desc = "Terminal left window navigation" },
+    ["<C-j>"] = { "<cmd>wincmd j<cr><esc>i", desc = "Terminal down window navigation" },
+    ["<C-k>"] = { "<cmd>wincmd k<cr><esc>i", desc = "Terminal up window navigation" },
+    ["<C-l>"] = { "<cmd>wincmd l<cr><esc>i", desc = "Terminal right window navigation" },
   },
 }
