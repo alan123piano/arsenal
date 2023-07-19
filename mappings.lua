@@ -44,7 +44,6 @@ return {
   },
   t = {
     ["<esc>"] = { "<C-\\><C-n>" },
-    ["<C-j>"] = { "<cmd>:q!<cr>" },
   },
   i = {
     ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" }, -- change description but the same command
