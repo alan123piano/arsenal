@@ -1,3 +1,10 @@
+
+-- Set the shell to Fish if available, otherwise fallback to the default shell
+local output = vim.fn.system "which fish"
+local fish = output:gsub("^%s*(.-)%s*$", "%1") -- Trim leading/trailing whitespace
+if fish ~= "" then vim.o.shell = fish end
+
+
 return {
   -- Configure AstroNvim updates
   updater = {

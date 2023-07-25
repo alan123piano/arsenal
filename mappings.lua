@@ -13,7 +13,7 @@ return {
     ["\\"] = { "<C-w>v", desc = "Vertical Split" },
     ["-"] = { "<C-w>s", desc = "Horizontal Split" },
     ["<tab>"] = { "<cmd>:q<cr>", desc = "Quit" },
-    ["t"] = { "<cmd>:terminal<cr>" },
+    ["t"] = { "<C-w>s<cmd>:terminal<cr>" },
     ["H"] = { "<cmd>:bprevious<cr>", desc = "Prev Buffer" },
     ["L"] = { "<cmd>:bnext<cr>", desc = "Next Buffer" },
     ["w"] = {
@@ -40,7 +40,6 @@ return {
     },
     ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" },
     ["<C-b>"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" },
-    ["<leader>'"] = { "<C-w>s<cmd>:terminal<cr>", desc = "Quick Terminal" },
   },
   t = {
     ["<esc>"] = { "<C-\\><C-n>" },
