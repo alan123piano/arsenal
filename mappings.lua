@@ -14,6 +14,8 @@ return {
     ["-"] = { "<C-w>s", desc = "Horizontal Split" },
     ["<tab>"] = { "<cmd>:q<cr>", desc = "Quit" },
     ["t"] = { "<C-w>s<cmd>:terminal<cr>" },
+    ["T"] = { "<C-w>v<cmd>:terminal<cr>" },
+    ["<C-t>"] = { "<cmd>:terminal<cr>" },
     ["H"] = { "<cmd>:bprevious<cr>", desc = "Prev Buffer" },
     ["L"] = { "<cmd>:bnext<cr>", desc = "Next Buffer" },
     ["w"] = {
@@ -46,11 +48,5 @@ return {
   },
   i = {
     ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" }, -- change description but the same command
-
-    -- window nav
-    ["<C-h>"] = { "<cmd>wincmd h<cr><esc>i", desc = "Terminal left window navigation" },
-    ["<C-j>"] = { "<cmd>wincmd j<cr><esc>i", desc = "Terminal down window navigation" },
-    ["<C-k>"] = { "<cmd>wincmd k<cr><esc>i", desc = "Terminal up window navigation" },
-    ["<C-l>"] = { "<cmd>wincmd l<cr><esc>i", desc = "Terminal right window navigation" },
   },
 }
