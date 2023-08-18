@@ -18,28 +18,17 @@ return {
     ["<C-t>"] = { "<cmd>:terminal<cr>" },
     ["H"] = { "<cmd>:bprevious<cr>", desc = "Prev Buffer" },
     ["L"] = { "<cmd>:bnext<cr>", desc = "Next Buffer" },
-    ["w"] = {
-      function() require("nvim-window").pick() end,
-      desc = "pick window",
-    },
+    ["w"] = { function() require("nvim-window").pick() end, desc = "pick window" },
     [","] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" },
     ["="] = {
       function() require("telescope.builtin").find_files { hidden = true, no_ignore = true } end,
       desc = "Find all files",
     },
-    ["<leader>fml"] = {
-      "<cmd>CellularAutomaton make_it_rain<cr>",
-      desc = "Fuck my life",
-    },
+    ["<leader>fml"] = { "<cmd>CellularAutomaton make_it_rain<cr>", desc = "Fuck my life" },
     ["<leader>;"] = { "<cmd>:edit!<cr>", desc = "Reload buffer" },
-    ["<leader>pp"] = {
-      "<cmd>:Telescope projects<cr>",
-      desc = "Telescope projects",
-    },
-    ["<leader>fR"] = {
-      function() require("spectre").open() end,
-      desc = "Spectre search & replace",
-    },
+    ["<leader>pp"] = { "<cmd>:Telescope projects<cr>", desc = "Telescope projects" },
+    ["<leader>lx"] = { "<cmd>:LspRestart", desc = "LSP Restart" },
+    ["<leader>fR"] = { function() require("spectre").open() end, desc = "Spectre search & replace" },
     ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" },
     ["<C-b>"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" },
   },
