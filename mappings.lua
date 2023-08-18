@@ -27,7 +27,7 @@ return {
     ["<leader>fml"] = { "<cmd>CellularAutomaton make_it_rain<cr>", desc = "Fuck my life" },
     ["<leader>;"] = { "<cmd>:edit!<cr>", desc = "Reload buffer" },
     ["<leader>pp"] = { "<cmd>:Telescope projects<cr>", desc = "Telescope projects" },
-    ["<leader>lx"] = { "<cmd>:LspRestart", desc = "LSP Restart" },
+    ["<leader>lx"] = { "<cmd>:LspRestart<cr>", desc = "LSP Restart" },
     ["<leader>fR"] = { function() require("spectre").open() end, desc = "Spectre search & replace" },
     ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" },
     ["<C-b>"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" },
