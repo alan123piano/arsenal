@@ -101,12 +101,12 @@ return {
 
   -- { "ellisonleao/gruvbox.nvim", lazy = false },
   -- { "EdenEast/nightfox.nvim", lazy = false }, -- lazy
-  -- {
-  --   "catppuccin/nvim",
-  --   as = "catppuccin",
-  --   lazy = false,
-  --   config = function() require("catppuccin").setup {} end,
-  -- },
+  {
+    "catppuccin/nvim",
+    as = "catppuccin",
+    lazy = false,
+    config = function() require("catppuccin").setup {} end,
+  },
   {
     "folke/tokyonight.nvim",
     as = "tokyonight",
@@ -122,5 +122,15 @@ return {
         style = "warmer",
       }
     end,
+  },
+  {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim", -- required
+      "nvim-telescope/telescope.nvim", -- optional
+      "sindrets/diffview.nvim", -- optional
+    },
+    config = true,
+    lazy = false,
   },
 }
