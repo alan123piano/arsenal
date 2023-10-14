@@ -171,16 +171,4 @@ return {
       }
     end,
   },
-  {
-    "Shatur/neovim-ayu",
-    as = "ayu",
-    lazy = false,
-    config = function()
-      require("lualine").setup {
-        options = {
-          theme = "ayu",
-        },
-      }
-    end,
-  },
 }
