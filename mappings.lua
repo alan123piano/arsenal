@@ -14,7 +14,7 @@ return {
     ["\\"] = { "<C-w>v", desc = "Vertical Split" },
     ["-"] = { "<C-w>s", desc = "Horizontal Split" },
     ["<tab>"] = { "<cmd>:q<cr>", desc = "Quit" },
-    ["<esc>"] = {"^", desc="go to first non-space"},
+    ["<esc>"] = { "^", desc = "go to first non-space" },
     ["t"] = { "<C-w>s<cmd>:terminal<cr>" },
     ["T"] = { "<C-w>v<cmd>:terminal<cr>" },
     ["<C-t>"] = { "<cmd>:terminal<cr>" },
@@ -36,10 +36,6 @@ return {
     t = {
       ["<esc>"] = { "<C-\\><C-n>" },
     },
-    i = {
-      ["<C-h>"] = { "<C-u>", desc = "Backspace til line start" },
-      ["<C-l>"] = { "<esc>Da", desc = "Delete til line end" },
-      ["<C-n>"] = { "<esc>o", desc = "Go to a new line" },
-    },
+    i = {},
   },
 }
