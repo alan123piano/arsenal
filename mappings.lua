@@ -10,6 +10,7 @@ return {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
     [";"] = { "<cmd>:HopWord<cr>", desc = "Hop" },
+    ["'"] = { "<cmd>:HopAnywhere<cr>", desc = "Hop!!" },
     ["\\"] = { "<C-w>v", desc = "Vertical Split" },
     ["-"] = { "<C-w>s", desc = "Horizontal Split" },
     ["<tab>"] = { "<cmd>:q<cr>", desc = "Quit" },
@@ -31,11 +32,13 @@ return {
     ["<leader>fR"] = { function() require("spectre").open() end, desc = "Spectre search & replace" },
     ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" },
     ["<C-b>"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" },
-  },
-  t = {
-    ["<esc>"] = { "<C-\\><C-n>" },
-  },
-  i = {
-    ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" }, -- change description but the same command
+    t = {
+      ["<esc>"] = { "<C-\\><C-n>" },
+    },
+    i = {
+      ["<C-h>"] = { "<C-u>", desc = "Backspace til line start" },
+      ["<C-l>"] = { "<esc>Da", desc = "Delete til line end" },
+      ["<C-n>"] = { "<esc>o", desc = "Go to a new line" },
+    },
   },
 }

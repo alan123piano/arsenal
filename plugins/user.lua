@@ -10,7 +10,7 @@ return {
     end,
   },
   {
-    "phaazon/hop.nvim",
+    "smoka7/hop.nvim",
     event = "BufRead",
     config = function()
       require("hop").setup {
