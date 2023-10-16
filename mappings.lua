@@ -33,9 +33,9 @@ return {
     ["<leader>fR"] = { function() require("spectre").open() end, desc = "Spectre search & replace" },
     ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" },
     ["<C-b>"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" },
-    t = {
-      ["<esc>"] = { "<C-\\><C-n>" },
-    },
-    i = {},
   },
+  t = {
+    ["<esc>"] = { "<C-\\><C-n>" },
+  },
+  i = {},
 }
