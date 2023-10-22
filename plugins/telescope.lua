@@ -12,7 +12,7 @@ return {
         prompt_prefix = string.format("%s ", get_icon "Search"),
         selection_caret = string.format("%s ", get_icon "Selected"),
         path_display = { "full" },
-        file_ignore_patterns = { "node_modules", ".mypy_cache", ".pyc", ".git", ".pytest_cache", "target" },
+        file_ignore_patterns = { "node_modules", ".mypy_cache", ".pyc", ".git", ".pytest_cache", "target", "**/dist" },
         sorting_strategy = "ascending",
         layout_strategy = "vertical",
         layout_config = {
