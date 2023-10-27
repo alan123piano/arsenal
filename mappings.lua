@@ -13,6 +13,8 @@ return {
     ["'"] = { "<cmd>:HopAnywhere<cr>", desc = "Hop!!" },
     ["\\"] = { "<C-w>v", desc = "Vertical Split" },
     ["-"] = { "<C-w>s", desc = "Horizontal Split" },
+    ["<leader>j"] = { "<C-i>", desc = "jump in"},
+    ["<leader>k"] = { "<C-o>", desc = "jump out"},
     ["<tab>"] = { "<cmd>:q<cr>", desc = "Quit" },
     ["<esc>"] = { "^", desc = "go to first non-space" },
     ["t"] = { "<C-w>s<cmd>:terminal<cr>" },
