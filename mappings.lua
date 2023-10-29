@@ -35,9 +35,12 @@ return {
     ["<leader>fR"] = { function() require("spectre").open() end, desc = "Spectre search & replace" },
     ["<C-s>"] = { "<cmd>:w!<cr>", desc = "Save File" },
     ["<C-b>"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" },
+
   },
   t = {
     ["<esc>"] = { "<C-\\><C-n>" },
   },
-  i = {},
+  i = {
+    ["<C-d><C-b>"] = { "import ipdb; ipdb.set_trace(context=5)" , desc = "debug"},
+  },
 }
